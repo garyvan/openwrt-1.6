@@ -1,0 +1,23 @@
+Source-Makefile: package/feeds/packages/suricata/Makefile
+Package: suricata
+Submenu: Firewall
+Version: 2.0.4-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap +libpcre +libpthread +libyaml +librt +libmagic +libnetfilter-queue
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Lightweight Network Intrusion Detection System
+Maintainer: 
+Source: suricata-2.0.4.tar.gz
+Type: ipkg
+Feed: packages
+Description:     Suricata is a high performance Network IDS, IPS and Network Security Monitoring engine. 
+  Open Source and owned by a community run non-profit foundation, the Open Information Security Foundation (OISF).
+  Suricata is developed by the OISF and its supporting vendors.
+http://www.snort.org/
+
+@@
+
+

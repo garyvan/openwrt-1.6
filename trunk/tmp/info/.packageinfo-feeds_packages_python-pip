@@ -1,0 +1,21 @@
+Source-Makefile: package/feeds/packages/python-pip/Makefile
+Package: python-pip
+Submenu: Python
+Version: 7.1.2-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python +python-setuptools
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Tool for installing Python packages.
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: pip-7.1.2.tar.gz
+Type: ipkg
+Feed: packages
+Description:   A tool for installing and managing Python packages.
+https://pip.pypa.io
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+

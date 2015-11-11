@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/lang/python-setuptools/Makefile
+Package: python-setuptools
+Submenu: Python
+Version: 18.3.1-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +python
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: Tool for installing Python packages.
+Maintainer: Alexandru Ardelean <ardeleanalex@gmail.com>
+Source: setuptools-18.3.1.tar.gz
+Type: ipkg
+Description:   Easily download, build, install, upgrade, and uninstall Python packages
+https://bitbucket.org/pypa/setuptools
+Alexandru Ardelean <ardeleanalex@gmail.com>
+@@
+
+

@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/libs/libyaml/Makefile
+Package: libyaml
+Submenu: Python
+Version: 0.1.6-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: lang
+Category: Languages
+Title: libyaml
+Maintainer: 
+Source: yaml-0.1.6.tar.gz
+Type: ipkg
+Description:   yaml library written in c
+http://pyyaml.org/wiki/LibYAML
+
+@@
+
+

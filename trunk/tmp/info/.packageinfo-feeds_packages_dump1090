@@ -1,0 +1,44 @@
+Source-Makefile: package/feeds/packages/dump1090/Makefile
+Package: dump1090
+Version: 2015-10-08-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +librtlsdr
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: librtlsdr
+Section: utils
+Category: Utilities
+Title: Mode S decoder for the Realtek RTL2832U (dump1090)
+Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
+Source: dump1090-2015-10-08-c55c71b57cf34e90d95afd52449a05a4b6dbda03.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Feed: packages
+Description:  Dump1090 is a Mode S decoder specifically designed for RTLSDR devices.
+https://github.com/mutability/dump1090
+Álvaro Fernández Rojas <noltari@gmail.com>
+@@
+
+Package: view1090
+Version: 2015-10-08-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: librtlsdr
+Section: utils
+Category: Utilities
+Title: Mode S decoder for the Realtek RTL2832U (view1090)
+Maintainer: Álvaro Fernández Rojas <noltari@gmail.com>
+Source: dump1090-2015-10-08-c55c71b57cf34e90d95afd52449a05a4b6dbda03.tar.gz
+License: GPL-2.0
+LicenseFiles: COPYING LICENSE
+Type: ipkg
+Feed: packages
+Description:  View1090 is a Mode S messages viewer for dump1090 devices.
+https://github.com/mutability/dump1090
+Álvaro Fernández Rojas <noltari@gmail.com>
+@@
+
+

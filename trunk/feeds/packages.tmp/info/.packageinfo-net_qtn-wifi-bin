@@ -1,0 +1,20 @@
+Source-Makefile: feeds/packages/net/qtn-wifi-bin/Makefile
+Package: kmod-qtn-wifi-bin
+Submenu: Cavium Drivers
+Version: <LINUX_VERSION>+36.7.0.31-1
+Depends: 
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: cavium
+Category: Kernel modules
+Title: Cavium QTN wifi modules and utilities.
+Maintainer: cavium
+Source: 
+Type: ipkg
+Description: 	This package contains the proprietary wireless driver and utilities for the QTN 840 chipset.
+	Installs the Cavium QTN wifi modules.
+cavium
+@@
+
+

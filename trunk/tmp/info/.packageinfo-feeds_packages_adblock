@@ -1,0 +1,33 @@
+Source-Makefile: package/feeds/packages/adblock/Makefile
+Package: adblock
+Version: 0.11.0-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +curl +wget
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: powerful adblock script to block ad/abuse domains
+Maintainer: Dirk Brenken <dirk@brenken.org>
+Source: 
+License: GPL-3.0+
+Type: ipkg
+Feed: packages
+Description: powerful adblock script to block ad/abuse domains
+When the dns server on your router receives dns requests, we will sort out queries that ask for the [A] resource records of ad servers
+and return the local ip address of your router and the internal web server delivers a transparent pixel instead.
+The script supports the following domain blacklist sites:
+  http://pgl.yoyo.org/adservers
+  http://malwaredomains.com
+  https://zeustracker.abuse.ch
+  https://feodotracker.abuse.ch
+  https://palevotracker.abuse.ch
+  http://dshield.org
+  http://www.shallalist.de
+  http://www.spam404.com
+  http://winhelp2002.mvps.org
+
+Dirk Brenken <dirk@brenken.org>
+@@
+
+
